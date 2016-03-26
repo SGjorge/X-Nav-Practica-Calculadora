@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html manifest="/calculadora.manifest">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" charset="utf-8"/>
+		<link rel=StyleSheet href="style.css"></link>
+		<script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+		<script src="app.js" type="text/javascript"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></link>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+		<title>Practica 1: Calculadora</title>
+   	</head>
+   	<body>
+		<!-- Navigation -->
+	    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+	        <div class="container topnav">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand topnav" href="https://github.com/SGjorge/X-Nav-Practica-Calculadora">X-Nav-Practica-Calculadora</a>
+	            </div>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li>
+	                        <a id="btn-simple">Simple</a>
+	                    </li>
+	                    <li>
+	                        <a id="btn-science">Science</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container -->
+	    </nav>
+
+   	<!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <input style="font-size:20px" class="col-md-3-offset-2" id="display" text=""></input>
+                        <hr class="intro-divider">
+                        <div>
+                            <button id="btn" class="btn btn-default btn-lg" value="7">7</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="8">8</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="9">9</button>
+                            <button class="btn btn-danger btn-lg" id="deleteAll" value="AC">AC</button>
+                            <button class="btn btn-danger btn-lg" id="deleteOne" value="DEL">DEL</button>
+                            <button id="btn" style="display:none;" class="btn btn-default btn-lg" value="sqr(">sqrt()</button>
+                            <button id="btn" style="display:none;" class="btn btn-default btn-lg" value="log(">log()</button>
+                            <button id="btn" style="display:none;" class="btn btn-default btn-lg" value="π">π</button>
+                        </div>
+                        <div>
+                            <button id="btn" class="btn btn-default btn-lg" value="4">4</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="5">5</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="6">6</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="/">/</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="*">*</button>
+                            <button id="btn" style="display:none;" class="btn btn-default btn-lg" value="cos(">cos()</button>
+                            <button id="btn" style="display:none;" class="btn btn-default btn-lg" value="ln(">ln()</button>
+                            <button id="btn" style="display:none;" class="btn btn-default btn-lg" value="(">(</button>
+                        </div>
+                        <div>
+                            <button id="btn" class="btn btn-default btn-lg" value="1">1</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="2">2</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="3">3</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="+">+</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="-">-</button>
+                            <button id="btn" style="display:none;" class="btn btn-default btn-lg" value="sen(">sen()</button>
+                            <button id="btn" style="display:none;" class="btn btn-default btn-lg" value="x10">x10</button>
+                            <button id="btn" style="display:none;" class="btn btn-default btn-lg" value=")">)</button>
+                        </div>
+                        <div>
+                            <button id="btn" class="btn btn-default btn-lg" value="0">0</button>
+                            <button id="btn" class="btn btn-default btn-lg" value=".">.</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="Ans">Ans</button>
+                            <button id="btn" class="btn btn-default btn-lg" value="^">^</button>
+                            <button class="btn btn-primary btn-lg" id="equal">=</button>
+                            <button style="display:none;" class="btn btn-primary btn-lg" id="ENG">ENG</button>
+							<button id="btn" style="display:none;" class="btn btn-default btn-lg" value="tan(">tg()</button>
+							<button id="btn" style="display:none;" class="btn btn-default btn-lg" value="e">e</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+   	</body>
+</html>

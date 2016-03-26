@@ -1,0 +1,22 @@
+button {
+	width: 59px;
+}
+
+input {
+	width: 300px;
+	height: 45px;
+	text-align:right;
+}
+
+.intro-header {
+    text-align: center;
+    color: #000;
+    background: url(intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
